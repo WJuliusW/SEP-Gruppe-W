@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" prefHeight="490.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.Ereignis_Single_Controller">
+   <children>
+      <VBox prefWidth="508.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblHeadline" maxWidth="1.7976931348623157E308" styleClass="HL1" text="EREIGNIS" textFill="#20ab20">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTitel" maxWidth="1.7976931348623157E308" promptText="Titel" />
+            <DatePicker fx:id="dateStartDatum" maxWidth="1.7976931348623157E308" />
+            <HBox prefHeight="72.0" prefWidth="508.0">
+               <children>
+                  <Label text="Von" />
+                  <TextField fx:id="txf1" />
+                  <Label text=":" />
+                  <TextField fx:id="txf2" />
+               </children>
+            </HBox>
+            <DatePicker fx:id="dateEndeDatum" maxWidth="1.7976931348623157E308" />
+            <HBox prefHeight="23.0" prefWidth="508.0">
+               <children>
+                  <Label text="Bis" />
+                  <TextField fx:id="txf3" />
+                  <Label text=":" />
+                  <TextField fx:id="txf4" />
+               </children>
+            </HBox>
+            <TextArea fx:id="txaAnmerkungen" prefHeight="150.0" />
+            <GridPane hgap="10.0" maxWidth="1.7976931348623157E308" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="5.0" prefWidth="191.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="330.0" minWidth="62.0" prefWidth="62.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="330.0" minWidth="55.0" prefWidth="73.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="112.0" minWidth="40.0" prefWidth="83.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="86.0" minWidth="65.0" prefWidth="79.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnAbbruch" mnemonicParsing="false" onAction="#handleAbbruchButtonAction" text="Abbrechen" GridPane.columnIndex="3" />
+                  <Button fx:id="btnSpeichern" mnemonicParsing="false" onAction="#handleSpeichernButtonAction" text="Speichern" GridPane.columnIndex="4" />
+                  <TextField fx:id="txfReminder" promptText="Reminder in Stunden" />
+                  <RadioButton fx:id="btnPOPUP" mnemonicParsing="false" text="POPUP" GridPane.columnIndex="1" />
+                  <RadioButton fx:id="btnEmail" mnemonicParsing="false" text="EMAIL" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.Material_List_Controller">
+    <children>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="lblHeadline" styleClass="HL2" text="MATERIAL" textFill="#20ab20">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#handleAddButtonAction" GridPane.columnIndex="2">
+                      <graphic>
+                          <ImageView pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@Images/Green/plus_16px.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+                  </Button>
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#handleDeleteButtonAction" GridPane.columnIndex="3">
+                      <graphic>
+                          <ImageView pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@Images/Green/minus_sign_16px.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+                  </Button>
+                  <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#handleEditButtonAction" GridPane.columnIndex="4">
+                      <graphic>
+                          <ImageView pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@Images/Green/edit_16px.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+                  </Button>
+            </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </GridPane>
+        <TableView fx:id="tblMaterial" prefWidth="300.0" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="columnBezeichnung" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="100.0" text="Bezeichnung" />
+                <TableColumn fx:id="columnAnmerkungen" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="100.0" text="Anmerkungen" />
+            </columns>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </TableView>
+    </children>
+</VBox>

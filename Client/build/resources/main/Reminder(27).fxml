@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.calendarfx.view.TimeField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="319.0">
+         <children>
+            <ComboBox layoutX="14.0" layoutY="14.0" prefWidth="150.0" promptText="Alle Teilnehmer" />
+            <Label layoutX="56.0" layoutY="87.0" text="Erinnerung versenden">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="85.0" layoutY="144.0" promptText="Bitte Titel eingeben.." />
+            <DatePicker layoutX="72.0" layoutY="188.0" />
+            <HBox alignment="CENTER" layoutX="105.0" layoutY="231.0">
+               <children>
+                  <TimeField prefHeight="26.0" prefWidth="90.0" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0">
+                     <image>
+                        <Image url="@Images/Green/clock_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="47.0" layoutY="294.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" prefHeight="18.0" prefWidth="99.0" text="per E-Mail" />
+                  <RadioButton mnemonicParsing="false" text="über Popo-up-Fenster" />
+               </children>
+            </HBox>
+            <Button layoutX="85.0" layoutY="350.0" mnemonicParsing="false" text="Erinnern" />
+            <Button layoutX="160.0" layoutY="350.0" mnemonicParsing="false" text="Abbrechen" />
+            <Line endX="108.5999755859375" endY="-1.52587890625E-5" layoutX="159.0" layoutY="118.0" startX="-103.0" startY="-1.0000152587890625" stroke="#a82727" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

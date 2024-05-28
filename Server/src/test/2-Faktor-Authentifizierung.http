@@ -1,0 +1,10 @@
+###
+POST http://localhost:8080/eteach/mail/send
+Content-Type: application/json
+
+{
+  "von": "",
+  "an": "omar.metwally@outlook.de",
+  "betreff": "2 Faktor Authentifizierung",
+  "nachricht": "289560"
+}

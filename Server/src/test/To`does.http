@@ -1,0 +1,11 @@
+###
+
+POST http://localhost:8080/eteach/todo/65/1/new
+Content-Type: application/json
+
+{
+  "aufgabe": "testAufgabe4"
+}
+
+###
+GET http://localhost:8080/eteach/todo/65/all

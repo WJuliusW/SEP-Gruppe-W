@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.QuizController">
+   <children>
+      <BorderPane prefHeight="454.0" prefWidth="659.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Polygon fx:id="links" fill="#28a828" onMouseClicked="#linksClicked" points="93.0, -4.0, 93.0, -97.0, 61.0, -51.0" stroke="BLACK" strokeType="INSIDE" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Polygon fx:id="rechts" fill="#28a828" onMouseClicked="#rechtsPressed" points="93.0, -4.0, 93.0, -97.0, 123.0, -55.0" stroke="BLACK" strokeType="INSIDE" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="64.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="601.0">
+                     <children>
+                        <Button fx:id="btnStatistik" mnemonicParsing="false" onAction="#btnStatistikPressed" text="Statistik" />
+                        <Button fx:id="btnAbgabe" mnemonicParsing="false" onAction="#btnAbgabePressed" text="Abgabe" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="lblName" layoutX="23.0" layoutY="14.0" prefHeight="25.0" prefWidth="129.0" text="Quizname" />
+                  <TextField fx:id="lblFrage" layoutX="59.0" layoutY="57.0" prefHeight="25.0" prefWidth="497.0" text="Quizfrage" />
+                  <CheckBox fx:id="choiceAntwort1" layoutX="11.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="562.0">
+                     <graphic>
+                        <TextField fx:id="txfA1" />
+                     </graphic></CheckBox>
+                  <CheckBox fx:id="choiceAntwort2" layoutX="11.0" layoutY="170.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="560.0">
+                     <graphic>
+                        <TextField fx:id="txfA2" prefHeight="25.0" prefWidth="486.0" />
+                     </graphic></CheckBox>
+                  <CheckBox fx:id="choiceAntwort3" layoutX="11.0" layoutY="221.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="557.0">
+                     <graphic>
+                        <TextField fx:id="txfA3" />
+                     </graphic></CheckBox>
+                  <CheckBox fx:id="choiceAntwort4" layoutX="11.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="554.0">
+                     <graphic>
+                        <TextField fx:id="txfA4" prefHeight="25.0" prefWidth="273.0" />
+                     </graphic></CheckBox>
+                  <Button fx:id="btnSpeichern" layoutX="464.0" layoutY="343.0" mnemonicParsing="false" onAction="#btnSpeichernPressed" text="Antwort speichern" />
+                  <Button fx:id="btnAdd" layoutX="424.0" layoutY="343.0" mnemonicParsing="false" onAction="#btnAddPressed" text="+" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

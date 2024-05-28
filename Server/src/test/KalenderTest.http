@@ -1,0 +1,31 @@
+# GET alle ereignisse von veranstaltung
+###
+GET http://localhost:8080/eteach/ereignis/veranstaltung/3/all
+
+# GET alle ereignisse von nutzer
+###
+GET http://localhost:8080/eteach/ereignis/nutzer/1/all
+
+# erstelle ereignis ("nutzer": nutzerId) ("veranstaltung": veranstaltungId)
+###
+POST http://localhost:8080/eteach/ereignis/new
+Content-Type: application/json
+
+{
+  "titel": "test",
+  "nutzer": 1,
+  "startDatum": "2021-07-14",
+  "startZeit": "18:00",
+  "erinnerungsIntervall": 4
+}
+
+###
+# GET kalender for nutzer
+###
+GET http://localhost:8080/eteach/ereignis/kalender/1
+
+
+###
+# GET kalender for nutzer
+###
+GET http://localhost:8080/eteach/ereignis/reminder/1

@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+mainClassName = 'de.unidue.SEP.eteach.client.MainApp'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'com.jfoenix:jfoenix:9.0.10'
+    implementation 'org.projectlombok:lombok:1.18.20'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.11.4'
+    implementation 'commons-codec:commons-codec:1.15'
+    implementation 'commons-io:commons-io:2.8.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit-converters:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+    implementation 'org.controlsfx:controlsfx:11.1.0'
+    implementation 'com.jfoenix:jfoenix:8.0.1'
+    implementation 'com.calendarfx:view:11.8.3'
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.moxy:2.7.3'
+    runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:win"
+    runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:linux"
+    runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:mac"
+
+
+}
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'de.unidue.SEP.eteach.client.JarMainApp'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="23.0" layoutY="71.0" text="Chat">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="22.0" layoutY="113.0" prefHeight="290.0" prefWidth="279.0" style="-fx-background-color: lightgrey; -fx-border-color: grey;">
+         <children>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: grey;" styleClass="searchicon">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" nodeOrientation="INHERIT" styleClass="searchicon">
+                     <image>
+                        <Image url="@Images/Green/search_24px.png" />
+                     </image>
+                  </ImageView>
+                  <TextField prefHeight="31.0" prefWidth="227.0" promptText="Search.." style="-fx-background-color: transparent;" styleClass="childpan">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <VBox layoutX="14.0" layoutY="61.0" spacing="10.0">
+               <children>
+                  <Pane prefHeight="54.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: grey;">
+                     <children>
+                        <Circle fill="#1fc9ff" layoutX="24.0" layoutY="27.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="48.0" layoutY="14.0" text="Max Mustermann" />
+                        <Label layoutX="48.0" layoutY="32.0" text="Wie gehts dir?" />
+                        <Label layoutX="205.0" layoutY="6.0" text="25.Mai" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="54.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: grey;">
+                     <children>
+                        <Circle fill="#ff1fa3" layoutX="24.0" layoutY="27.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="48.0" layoutY="14.0" text="Anna Musterfrau" />
+                        <Label layoutX="48.0" layoutY="32.0" text="Wie gehts dir?" />
+                        <Label layoutX="206.0" layoutY="6.0" text="24.Mai" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="54.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: grey;">
+                     <children>
+                        <Circle fill="#1fff61" layoutX="24.0" layoutY="27.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="48.0" layoutY="14.0" text="Bin Unkreativ" />
+                        <Label layoutX="48.0" layoutY="32.0" text="Wie gehts dir?" />
+                        <Label layoutX="206.0" layoutY="6.0" text="20.Mai" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="312.0" layoutY="113.0" prefHeight="290.0" prefWidth="449.0" style="-fx-background-color: lightgrey; -fx-border-color: grey;">
+         <children>
+            <Circle fill="#1fc9ff" layoutX="24.0" layoutY="58.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField alignment="TOP_LEFT" layoutX="50.0" layoutY="46.0" style="-fx-background-radius: 20;" text="Wie gehts dir?" />
+            <TextField layoutX="36.0" layoutY="11.0" style="-fx-background-color: transparent;" text="Max Mustermann" />
+            <Label layoutX="12.0" layoutY="15.0" text="Von:" />
+            <TextField alignment="TOP_LEFT" layoutX="258.0" layoutY="75.0" style="-fx-background-radius: 20; -fx-background-color: pink;" text="gut und dir?" />
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="249.0" prefHeight="26.0" prefWidth="429.0">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="442.0" promptText="..." />
+                  <ImageView fitHeight="26.0" fitWidth="28.0">
+                     <image>
+                        <Image url="@Images/email_send_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label layoutX="312.0" layoutY="71.0" text="Nachricht">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="716.0" layoutY="21.0">
+         <image>
+            <Image url="@Images/male_user_24px.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Zurück" />
+   </children>
+</AnchorPane>

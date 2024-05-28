@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.StatistikController">
+   <children>
+      <TextField fx:id="txfProTeilnehmer" layoutX="26.0" layoutY="38.0" prefHeight="25.0" prefWidth="175.0" promptText="Prozent der LV Teilnehmner" />
+      <TextField fx:id="txfBestanden" layoutX="26.0" layoutY="74.0" promptText="Bestehensquote" />
+      <TableView fx:id="tblTeilnehmer" layoutX="26.0" layoutY="133.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tbcTeilnehmer" prefWidth="107.0" text="Teilnehmer" />
+          <TableColumn fx:id="tbcAnzahlV" prefWidth="92.0" text="Anzahl Versuche" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblFragen" layoutX="284.0" layoutY="133.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tbcFrage" prefWidth="99.0" text="Frage" />
+          <TableColumn fx:id="tbcAnzahlKorrekt" prefWidth="100.0" text="Anzahl korrekter Antworten" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

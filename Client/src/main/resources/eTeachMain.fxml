@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" prefHeight="800.0" prefWidth="1291.0" stylesheets="@Css/eTeach_Custom.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.ETeach_Controller">
+   <children>
+      <GridPane prefHeight="800.0" prefWidth="1304.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <GridPane fx:id="gridNavBar">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+                  <ColumnConstraints hgrow="NEVER" />
+                  <ColumnConstraints hgrow="NEVER" />
+                  <ColumnConstraints hgrow="NEVER" />
+                <ColumnConstraints hgrow="NEVER" />
+              </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <ToolBar fx:id="toolbarMenuLeft" prefHeight="42.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+                    <items>
+                        <Label fx:id="lblCurrentUser" text="Label" />
+                        <Button fx:id="btnEinstellungen" mnemonicParsing="false" onAction="#handleSettingsButtonAction" styleClass="btnRound">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/settings_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnProfil" mnemonicParsing="false" onAction="#handleProfilButtonAction" styleClass="btnRound">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/head_profile_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#LogoutPressed" styleClass="btnRound">
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/Green/exit_32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </items>
+                  </ToolBar>
+                  <ToolBar fx:id="toolbarMenuRight" prefHeight="35.0" prefWidth="1105.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                    <items>
+                        <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleHomeButtonAction">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/school_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnVeranstaltungen" mnemonicParsing="false" onAction="#handleVeranstaltungenButtonAction">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/training_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnKalender" mnemonicParsing="false" onAction="#handleKalenderButtonAction">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/edit_calendar_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnChat" mnemonicParsing="false" onAction="#handleChatButtonAction" styleClass="menuItem">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/chat_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnContacts" mnemonicParsing="false" onAction="#handleContactsButtonAction">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/user_groups_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnAlleLehrveranstaltung" layoutX="186.0" layoutY="10.0" mnemonicParsing="false" onAction="#alleLehrveranstaltungPressed">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@Images/Green/study_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                    </items>
+                  </ToolBar>
+               </children>
+            </GridPane>
+            <BorderPane fx:id="borderpaneMainPane" maxHeight="1.7976931348623157E308" styleClass="MainPane" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </GridPane.margin>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

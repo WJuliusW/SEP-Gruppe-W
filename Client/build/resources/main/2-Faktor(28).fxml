@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.LogInController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="182.0" layoutY="197.0" prefHeight="27.0" prefWidth="249.0" spacing="5.0">
+         <children>
+            <ImageView fx:id="key">
+               <image>
+                  <Image url="@Images/Green/password_1_24px.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txfCode" prefHeight="27.0" prefWidth="194.0" promptText="Code eingeben" />
+         </children>
+      </HBox>
+      <Button fx:id="btnCommit" layoutX="317.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnCommit" style="-fx-background-color: green; -fx-border-color: grey;" text="Bestätigen" textFill="WHITE" />
+      <Button fx:id="btnAbbrechen" layoutX="216.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnAbbrechenPressed" style="-fx-background-color: red; -fx-border-color: grey;" text="Abbrechen" textFill="WHITE" />
+      <HBox layoutX="193.0" layoutY="90.0">
+         <children>
+            <ImageView fitWidth="31.0">
+               <image>
+                  <Image url="@Images/one_time_password_30px.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Authentifizierung">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Text layoutX="109.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bitte geben Sie den Code, den Sie per E-Mail erhalten haben hier ein." />
+   </children>
+</AnchorPane>

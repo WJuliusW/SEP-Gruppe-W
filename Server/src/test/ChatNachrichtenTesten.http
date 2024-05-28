@@ -1,0 +1,37 @@
+###
+POST http://localhost:8080/eteach/chatRoom/130/1/newMessage
+Content-Type: application/json
+Accept: application/json
+
+{
+  "inhalt": "130",
+  "zeitstempel": "2021-06-13T09:55:26"
+}
+
+
+###
+GET http://localhost:8080/eteach/chatRoom/129
+// Hier bekommen wir alle nachrichten einer Projektgruppe
+
+###
+GET http://localhost:8080/eteach/chatRoom/130
+
+// Löschen alle Nachrichten im Chatraum
+###
+DELETE http://localhost:8080/eteach/chatRoom/3/clear
+
+//Löschen eine bestimmte Nachricht im chatraum
+###
+DELETE http://localhost:8080/eteach/chatRoom/225
+
+
+
+//Projektgruppen
+###
+GET http://localhost:8080/eteach/veranstaltung/searchProjektgruppe/pro
+
+
+//Suchen nach Veranstaltungstyp --> GET http://localhost:8080/eteach/veranstaltung/all/{{veranstaltungsTyp}}
+###
+
+GET http://localhost:8080/eteach/veranstaltung/all/Vorlesung

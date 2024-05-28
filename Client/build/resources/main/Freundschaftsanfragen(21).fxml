@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.Freunde_Controller">
+   <children>
+      <Pane layoutX="243.0" layoutY="40.0" prefHeight="261.0" prefWidth="336.0" style="-fx-background-color: lightgrey; -fx-border-color: grey;" AnchorPane.leftAnchor="243.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <TableView fx:id="tblAnfragen" layoutX="19.0" layoutY="14.0" onMouseClicked="#tblAnfragenClicked" prefHeight="234.0" prefWidth="298.0">
+              <columns>
+                <TableColumn fx:id="tbcAnfragen" prefWidth="297.0" text="Name" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <TableView fx:id="tblFreunde" layoutX="38.0" layoutY="40.0" onMouseClicked="#tblFreundeClicked" prefHeight="298.0" prefWidth="172.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="tbcFreunde" prefWidth="171.20001220703125" text="Freunde" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblChat" layoutX="38.0" layoutY="357.0" onMouseClicked="#tblChatClicked" prefHeight="234.0" prefWidth="535.0">
+        <columns>
+          <TableColumn fx:id="tbcNutzer" prefWidth="170.0" text="Nutzer" />
+          <TableColumn fx:id="tbcNachricht" minWidth="-Infinity" prefWidth="363.0" text="Letzte Nachricht" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

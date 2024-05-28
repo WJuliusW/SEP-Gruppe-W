@@ -1,0 +1,170 @@
+de/unidue/SEP/eteach/client/Entities/Semestertyp.java
+ de.unidue.SEP.eteach.client.Entities.Semestertyp
+de/unidue/SEP/eteach/client/Endpoints/MailEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.MailEndpoint
+de/unidue/SEP/eteach/client/Entities/ToDo.java
+ de.unidue.SEP.eteach.client.Entities.ToDo
+de/unidue/SEP/eteach/client/ViewController/StudentNeu_Dialog_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.StudentNeu_Dialog_Controller
+de/unidue/SEP/eteach/client/Endpoints/VeranstaltungEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.VeranstaltungEndpoint
+de/unidue/SEP/eteach/client/Endpoints/AbgabeEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.AbgabeEndpoint
+de/unidue/SEP/eteach/client/Entities/Studienfach.java
+ de.unidue.SEP.eteach.client.Entities.Studienfach
+de/unidue/SEP/eteach/client/Entities/Veranstaltungstyp.java
+ de.unidue.SEP.eteach.client.Entities.Veranstaltungstyp
+de/unidue/SEP/eteach/client/Entities/Ereignis.java
+ de.unidue.SEP.eteach.client.Entities.Ereignis
+de/unidue/SEP/eteach/client/Entities/Quiz.java
+ de.unidue.SEP.eteach.client.Entities.Quiz
+de/unidue/SEP/eteach/client/Endpoints/MaterialEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.MaterialEndpoint
+de/unidue/SEP/eteach/client/Entities/Adresse.java
+ de.unidue.SEP.eteach.client.Entities.Adresse
+de/unidue/SEP/eteach/client/Endpoints/PrivatNachrichtenEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.PrivatNachrichtenEndpoint
+de/unidue/SEP/eteach/client/Entities/Mail.java
+ de.unidue.SEP.eteach.client.Entities.Mail
+de/unidue/SEP/eteach/client/Entities/ChatRaum.java
+ de.unidue.SEP.eteach.client.Entities.ChatRaum
+de/unidue/SEP/eteach/client/Endpoints/FreundschaftEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.FreundschaftEndpoint
+de/unidue/SEP/eteach/client/Endpoints/ChatRaumEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.ChatRaumEndpoint
+de/unidue/SEP/eteach/client/Entities/Remindertyp.java
+ de.unidue.SEP.eteach.client.Entities.Remindertyp
+de/unidue/SEP/eteach/client/Entities/Nutzer.java
+ de.unidue.SEP.eteach.client.Entities.Nutzer
+de/unidue/SEP/eteach/client/Endpoints/NutzerEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.NutzerEndpoint
+de/unidue/SEP/eteach/client/Entities/PrivatNachrichtenTyp.java
+ de.unidue.SEP.eteach.client.Entities.PrivatNachrichtenTyp
+de/unidue/SEP/eteach/client/RetrofitClient.java
+ de.unidue.SEP.eteach.client.RetrofitClient
+de/unidue/SEP/eteach/client/Entities/Student.java
+ de.unidue.SEP.eteach.client.Entities.Student
+de/unidue/SEP/eteach/client/Entities/Lehrstuhl.java
+ de.unidue.SEP.eteach.client.Entities.Lehrstuhl
+de/unidue/SEP/eteach/client/Endpoints/StudentEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.StudentEndpoint
+de/unidue/SEP/eteach/client/Entities/Stats.java
+ de.unidue.SEP.eteach.client.Entities.Stats
+de/unidue/SEP/eteach/client/Endpoints/SemesterEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.SemesterEndpoint
+de/unidue/SEP/eteach/client/Entities/Lehrender.java
+ de.unidue.SEP.eteach.client.Entities.Lehrender
+de/unidue/SEP/eteach/client/Endpoints/LehrenderEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.LehrenderEndpoint
+de/unidue/SEP/eteach/client/Endpoints/ToDoEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.ToDoEndpoint
+de/unidue/SEP/eteach/client/Entities/Semester.java
+ de.unidue.SEP.eteach.client.Entities.Semester
+de/unidue/SEP/eteach/client/ViewController/StatistikController.java
+ de.unidue.SEP.eteach.client.ViewController.StatistikController
+de/unidue/SEP/eteach/client/JarMainApp.java
+ de.unidue.SEP.eteach.client.JarMainApp
+de/unidue/SEP/eteach/client/Entities/PrivatNachricht.java
+ de.unidue.SEP.eteach.client.Entities.PrivatNachricht
+de/unidue/SEP/eteach/client/Endpoints/EreignisEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.EreignisEndpoint
+de/unidue/SEP/eteach/client/ViewController/TodoNew_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.TodoNew_Controller
+de/unidue/SEP/eteach/client/Entities/Abgabe.java
+ de.unidue.SEP.eteach.client.Entities.Abgabe
+de/unidue/SEP/eteach/client/Endpoints/QuizEndpoint.java
+ de.unidue.SEP.eteach.client.Endpoints.QuizEndpoint
+de/unidue/SEP/eteach/client/Entities/Frage.java
+ de.unidue.SEP.eteach.client.Entities.Frage
+de/unidue/SEP/eteach/client/Entities/ChatNachricht.java
+ de.unidue.SEP.eteach.client.Entities.ChatNachricht
+de/unidue/SEP/eteach/client/Entities/Material.java
+ de.unidue.SEP.eteach.client.Entities.Material
+de/unidue/SEP/eteach/client/Entities/Freundschaft.java
+ de.unidue.SEP.eteach.client.Entities.Freundschaft
+de/unidue/SEP/eteach/client/Entities/Veranstaltung.java
+ de.unidue.SEP.eteach.client.Entities.Veranstaltung
+de/unidue/SEP/eteach/client/Entities/Stats2.java
+ de.unidue.SEP.eteach.client.Entities.Stats2
+de/unidue/SEP/eteach/client/Controller/Abgabe_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Abgabe_Controller
+de/unidue/SEP/eteach/client/ViewController/Lehrender_Single_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Lehrender_Single_Controller
+de/unidue/SEP/eteach/client/ViewController/Material_List_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Material_List_Controller
+de/unidue/SEP/eteach/client/ViewController/Veranstaltung_Single_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Veranstaltung_Single_Controller
+de/unidue/SEP/eteach/client/Controller/Veranstaltung_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Veranstaltung_Controller
+de/unidue/SEP/eteach/client/ViewController/LehrveranstaltungListeController.java
+ de.unidue.SEP.eteach.client.ViewController.LehrveranstaltungListeController
+de/unidue/SEP/eteach/client/MainApp.java
+ de.unidue.SEP.eteach.client.MainApp
+de/unidue/SEP/eteach/client/Controller/Ereignis_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Ereignis_Controller
+ de.unidue.SEP.eteach.client.Controller.Ereignis_Controller$1
+ de.unidue.SEP.eteach.client.Controller.Ereignis_Controller$1$1
+de/unidue/SEP/eteach/client/ViewController/LogInController.java
+ de.unidue.SEP.eteach.client.ViewController.LogInController
+de/unidue/SEP/eteach/client/ViewController/Kalender.java
+ de.unidue.SEP.eteach.client.ViewController.Kalender
+de/unidue/SEP/eteach/client/Context.java
+ de.unidue.SEP.eteach.client.Context
+de/unidue/SEP/eteach/client/ViewController/Student_Single_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Student_Single_Controller
+de/unidue/SEP/eteach/client/ViewController/Nutzer_List_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Nutzer_List_Controller
+de/unidue/SEP/eteach/client/ViewController/Freunde_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Freunde_Controller
+de/unidue/SEP/eteach/client/ViewController/Veranstaltung_Collection_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Veranstaltung_Collection_Controller
+ de.unidue.SEP.eteach.client.ViewController.Veranstaltung_Collection_Controller$1
+ de.unidue.SEP.eteach.client.ViewController.Veranstaltung_Collection_Controller$2
+de/unidue/SEP/eteach/client/Controller/Material_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Material_Controller
+de/unidue/SEP/eteach/client/Controller/Nutzer_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Nutzer_Controller
+de/unidue/SEP/eteach/client/Controller/PrivatChat_Controller.java
+ de.unidue.SEP.eteach.client.Controller.PrivatChat_Controller
+de/unidue/SEP/eteach/client/ViewController/Register_Lehrender_New_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Register_Lehrender_New_Controller
+de/unidue/SEP/eteach/client/Controller/Quiz_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Quiz_Controller
+de/unidue/SEP/eteach/client/ViewController/Veranstaltung_Teilnehmer_List_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Veranstaltung_Teilnehmer_List_Controller
+de/unidue/SEP/eteach/client/ViewController/ETeach_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.ETeach_Controller
+de/unidue/SEP/eteach/client/Controller/Freundschaft_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Freundschaft_Controller
+de/unidue/SEP/eteach/client/Controller/Student_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Student_Controller
+de/unidue/SEP/eteach/client/ViewController/Material_Single_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Material_Single_Controller
+de/unidue/SEP/eteach/client/ViewController/Register_Student_New_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Register_Student_New_Controller
+de/unidue/SEP/eteach/client/ViewController/ProjektGruppen_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.ProjektGruppen_Controller
+de/unidue/SEP/eteach/client/Controller/Lehrender_Controller.java
+ de.unidue.SEP.eteach.client.Controller.Lehrender_Controller
+de/unidue/SEP/eteach/client/ViewController/Ereignis_Single_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Ereignis_Single_Controller
+de/unidue/SEP/eteach/client/ViewController/Student_List_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Student_List_Controller
+de/unidue/SEP/eteach/client/ViewController/changeDate.java
+ de.unidue.SEP.eteach.client.ViewController.changeDate
+de/unidue/SEP/eteach/client/ViewController/Veranstaltung_List_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Veranstaltung_List_Controller
+de/unidue/SEP/eteach/client/Controller/ChatRaum_Controller.java
+ de.unidue.SEP.eteach.client.Controller.ChatRaum_Controller
+ de.unidue.SEP.eteach.client.Controller.ChatRaum_Controller$1
+ de.unidue.SEP.eteach.client.Controller.ChatRaum_Controller$1$1
+de/unidue/SEP/eteach/client/ViewController/Student_List_Large_Controller.java
+ de.unidue.SEP.eteach.client.ViewController.Student_List_Large_Controller
+de/unidue/SEP/eteach/client/Controller/ToDo_Controller.java
+ de.unidue.SEP.eteach.client.Controller.ToDo_Controller
+de/unidue/SEP/eteach/client/ViewController/PrivatChatController.java
+ de.unidue.SEP.eteach.client.ViewController.PrivatChatController
+de/unidue/SEP/eteach/client/ViewController/AbgabeController.java
+ de.unidue.SEP.eteach.client.ViewController.AbgabeController
+de/unidue/SEP/eteach/client/ViewController/QuizController.java
+ de.unidue.SEP.eteach.client.ViewController.QuizController

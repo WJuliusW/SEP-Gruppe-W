@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.AbgabeController">
+   <children>
+      <TableView fx:id="tblAntworten" layoutX="42.0" layoutY="32.0" prefHeight="317.0" prefWidth="510.0">
+        <columns>
+          <TableColumn fx:id="tbcFrage" prefWidth="257.0" text="Frage" />
+          <TableColumn fx:id="tbcKorrekt" prefWidth="252.0" text="Richtig/Falsch" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

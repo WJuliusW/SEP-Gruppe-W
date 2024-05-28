@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="418.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.Kalender">
+   <children>
+      <TableView fx:id="tblTermine" layoutX="14.0" layoutY="14.0" onMouseClicked="#tablTerminClicked" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="tbcTitel" prefWidth="75.0" text="Titel" />
+          <TableColumn fx:id="tcbVorlesung" prefWidth="75.0" text="Vorlesung" />
+            <TableColumn fx:id="tbcS1" prefWidth="75.0" text="StartDatum" />
+            <TableColumn fx:id="tbcS2" prefWidth="75.0" text="StartUhrzeit" />
+            <TableColumn fx:id="tbcE1" prefWidth="75.0" text="EndDatum" />
+            <TableColumn fx:id="tbcE2" prefWidth="75.0" text="EndUhrzeit" />
+            <TableColumn fx:id="anmerkung" prefWidth="142.0" text="Anmerkung" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnTermin" layoutX="505.0" layoutY="14.0" mnemonicParsing="false" onAction="#terminAction" prefHeight="25.0" prefWidth="105.0" text="Termin erstellen" AnchorPane.topAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeDatePressed" prefHeight="25.0" prefWidth="91.0" text="Change Date" AnchorPane.topAnchor="14.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="1252.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="38.0" layoutY="76.0" />
+      <Pane layoutX="296.0" layoutY="116.0" prefHeight="290.0" prefWidth="409.0" style="-fx-background-color: lightgrey; -fx-border-color: grey;">
+         <children>
+            <Circle fill="#1fc9ff" layoutX="27.0" layoutY="31.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField alignment="TOP_LEFT" layoutX="50.0" layoutY="19.0" prefHeight="25.0" prefWidth="177.0" style="-fx-background-radius: 20;" text="Schon die Aufgaben gemacht?" />
+            <TextField alignment="TOP_LEFT" layoutX="182.0" layoutY="56.0" prefHeight="25.0" prefWidth="209.0" style="-fx-background-radius: 20; -fx-background-color: pink;" text="grade angefangen und die anderen?" />
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="249.0" prefHeight="26.0" prefWidth="387.0">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="442.0" promptText="..." />
+                  <ImageView fitHeight="26.0" fitWidth="28.0">
+                     <image>
+                        <Image url="@Images/email_send_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Circle fill="#ff1fa3" layoutX="27.0" layoutY="109.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField alignment="TOP_LEFT" layoutX="50.0" layoutY="97.0" prefHeight="25.0" prefWidth="215.0" style="-fx-background-radius: 20;" text="schon erledigt." />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="116.0" prefHeight="290.0" prefWidth="267.0" style="-fx-background-color: lightgrey; -fx-border-color: grey;">
+         <children>
+            <TableView layoutX="14.0" layoutY="13.0" prefHeight="226.0" prefWidth="238.0">
+              <columns>
+                <TableColumn minWidth="0.0" prefWidth="107.19997787475586" text="Bezeichnung" />
+                <TableColumn prefWidth="128.80006408691406" text="Anmerkungen" />
+              </columns>
+            </TableView>
+            <Button layoutX="197.0" layoutY="251.0" mnemonicParsing="false" text="Upload" />
+         </children>
+      </Pane>
+      <ImageView layoutX="712.0" layoutY="14.0">
+         <image>
+            <Image url="@Images/male_user_16px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="12.0" layoutY="54.0" text="Projektgruppe" textFill="#29b754">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <HBox layoutX="723.0" layoutY="116.0" prefHeight="290.0" prefWidth="231.0">
+         <children>
+            <Pane prefHeight="530.0" prefWidth="259.0" style="-fx-background-color: lightgrey; -fx-border-color: grey;">
+               <children>
+                  <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Heute">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
+                  <TableView layoutX="14.0" layoutY="49.0" prefHeight="226.0" prefWidth="201.0">
+                    <columns>
+                      <TableColumn minWidth="0.0" prefWidth="90.4000244140625" text="Termine" />
+                        <TableColumn prefWidth="110.39996337890625" text="Zuordnung" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label layoutX="723.0" layoutY="94.0" text="To-Do" textFill="#29b754">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <HBox layoutX="972.0" layoutY="116.0" prefHeight="290.0" prefWidth="259.0">
+         <children>
+            <Pane prefHeight="530.0" prefWidth="259.0" style="-fx-background-color: lightgrey; -fx-border-color: grey;">
+               <children>
+                  <TableView layoutX="14.0" layoutY="49.0" prefHeight="226.0" prefWidth="231.0">
+                     <columns>
+                        <TableColumn prefWidth="77.60009765625" text="Vorname" />
+                        <TableColumn prefWidth="153.599853515625" text="Nachname" />
+                     </columns>
+                  </TableView>
+                  <HBox layoutX="174.0" layoutY="21.0">
+                     <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0">
+                           <image>
+                              <Image url="@Images/Green/plus_16px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0">
+                           <image>
+                              <Image url="@Images/Green/minus_sign_16px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0">
+                           <image>
+                              <Image url="@Images/Green/edit_16px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label layoutX="972.0" layoutY="94.0" text="Teilnehmer" textFill="#29b754">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="94.0" text="Chat" textFill="#29b754">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="94.0" text="Daten-Upload" textFill="#29b754">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

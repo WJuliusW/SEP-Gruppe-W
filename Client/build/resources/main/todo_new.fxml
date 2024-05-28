@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.TodoNew_Controller">
+   <children>
+      <TextField fx:id="txfName" layoutX="226.0" layoutY="294.0" promptText="ToDo-Name" />
+      <Button layoutX="376.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnSpeichernPressed" text="Speichern" />
+      <ListView fx:id="listNutzer" layoutX="50.0" layoutY="24.0" onMouseClicked="#listClicked" onMousePressed="#listClicked" prefHeight="266.0" prefWidth="505.0" />
+   </children>
+</AnchorPane>

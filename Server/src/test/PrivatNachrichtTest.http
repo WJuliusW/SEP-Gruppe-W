@@ -1,0 +1,27 @@
+###
+GET http://localhost:8080/eteach/privatChat/nachrichten/1
+
+###
+GET http://localhost:8080/eteach/privatChat/freundschaftsanfragen/1
+
+###
+GET http://localhost:8080/eteach/privatChat/nachrichten/1/33
+
+###
+POST http://localhost:8080/eteach/privatChat/nachrichten/33/1/new
+Content-Type: application/json
+
+{
+  "inhalt": "Hallo Sam"
+}
+###
+
+POST http://localhost:8080/eteach/privatChat/freundschaftsanfragen/33/1/new
+Content-Type: application/json
+
+{
+  "inhalt": "Hallo Sam ich sende dir eine Freunschaftsanfrage"
+}
+
+###
+DELETE http://localhost:8080/eteach/freundschaft/358

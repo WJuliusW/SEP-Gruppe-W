@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="1.7976931348623157E308" prefHeight="632.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.ProjektGruppen_Controller">
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblHeadline" styleClass="HL1" text="MEINE ProjektGruppen" textFill="#20ab20">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <GridPane hgap="5.0" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="NEVER" />
+                  <ColumnConstraints hgrow="NEVER" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="32.0" minWidth="15.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="144.0" minWidth="10.0" prefWidth="39.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="219.0" minWidth="10.0" prefWidth="147.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="262.0" minWidth="10.0" prefWidth="83.0" />
+                  <ColumnConstraints hgrow="NEVER" />
+                  <ColumnConstraints hgrow="NEVER" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="btnAddLehrveranstaltung" mnemonicParsing="false" onAction="#handleAddLehrveranstaltungButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="1">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Green/plus_16px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDeleteLehrveranstaltung" mnemonicParsing="false" onAction="#handleDeleteVeranstaltungButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="3">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Green/minus_sign_16px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditVeranstaltung" mnemonicParsing="false" onAction="#handleEditVeranstaltungButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Green/edit_16px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ComboBox fx:id="comboVeranstaltungen" onAction="#handleComboBoxVeranstaltungChange" prefHeight="30.0" prefWidth="500.0" promptText="Veranstaltungen" />
+                  <Button fx:id="btnAddTeilnehmer" mnemonicParsing="false" onAction="#handleAddTeilnehmerButtonAction" prefHeight="25.0" prefWidth="137.0" text="Teilnehmer hinzufügen" GridPane.columnIndex="4">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Green/plus_16px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="btnRefreshAllTableData" mnemonicParsing="false" onAction="#handleRefreshAllButtonAction" text="Refresh Table Data" GridPane.columnIndex="5" GridPane.halignment="RIGHT">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Green/refresh_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </GridPane>
+      <Pane prefHeight="106.0" prefWidth="912.0" />
+      <HBox spacing="35.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <VBox fx:id="paneMaterialList" prefWidth="300.0" spacing="5.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="lblHeadline21" styleClass="HL2" text="MATERIAL" textFill="#20ab20">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnAddMaterial" mnemonicParsing="false" onAction="#handleAddMaterialButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="1">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/plus_16px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="btnDownloadMaterial" mnemonicParsing="false" onAction="#handleDownloadMaterialButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="2">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/download_16px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="btnEditMaterial" mnemonicParsing="false" onAction="#handleEditMaterialButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="4">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/edit_16px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="btnDeleteMaterial" mnemonicParsing="false" onAction="#handleDeleteMaterialButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="3">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/minus_sign_16px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <TableView fx:id="tblMaterial" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="columnBezeichnung" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="148.0" text="Bezeichnung" />
+                        <TableColumn fx:id="columnAnmerkungen" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="152.0" text="Anmerkungen" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <GridPane VBox.vgrow="ALWAYS">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="117.0" minHeight="28.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="396.0" minHeight="307.0" prefHeight="396.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="lblHeadline2" styleClass="HL2" text="Chat" textFill="#20ab20">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="chat" prefHeight="396.0" prefWidth="260.0" GridPane.rowIndex="1">
+                          <columns>
+                            <TableColumn fx:id="tbcChatDate" prefWidth="75.0" text="Datum" />
+                            <TableColumn fx:id="tbcChatNutzer" prefWidth="75.0" text="Nutzer" />
+                              <TableColumn fx:id="tbcNachricht" prefWidth="92.0" text="Nachricht" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </GridPane>
+                  <Pane>
+                     <children>
+                        <TextField fx:id="txfMessage" layoutY="12.0" prefHeight="25.0" prefWidth="231.0" />
+                        <Button fx:id="btnSend" layoutX="242.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnSendPressed" prefHeight="25.0" prefWidth="32.0">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/email_send_32px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="paneVeranstaltungTermine" prefWidth="300.0" spacing="5.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+                        <ColumnConstraints hgrow="NEVER" />
+                        <ColumnConstraints hgrow="NEVER" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="lblOrganisator112" styleClass="HL2" text="To-DO" textFill="#20ab20">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnAddTermin" mnemonicParsing="false" onAction="#handleAddTerminButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="1">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/plus_16px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="btnDeleteTermin" mnemonicParsing="false" onAction="#handleDeleteTerminButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="2">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/minus_sign_16px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="btnEditTermin" mnemonicParsing="false" onAction="#handleEditTerminButtonAction" prefHeight="30.0" prefWidth="30.0" GridPane.columnIndex="3">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/edit_16px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <TableView fx:id="tblToDo" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="tbcToDoTitel" prefWidth="150.0" text="Aufgabe" />
+                        <TableColumn fx:id="tbcNutzer" prefWidth="148.0" text="Von" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

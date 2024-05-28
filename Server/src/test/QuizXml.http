@@ -1,0 +1,79 @@
+###
+POST http://localhost:8080/eteach/quiz/3/parse/xml
+Content-Type: application/xml
+
+
+<Quizfragen>
+    <Fragenzeile>
+        <Fragennummer>1</Fragennummer>
+        <Frage>Wie stehen Umsatz, Gewinn und Kosten miteinander in Verbindung?</Frage>
+        <AntwortA>Gewinn = Umsatz - Kosten</AntwortA>
+        <AntwortB>Umsatz = Gewinn - Kosten</AntwortB>
+        <AntwortC>Gewinn = Umsatz / Kosten</AntwortC>
+        <AntwortD>Gewinn = Umsatz + Kosten</AntwortD>
+        <KorrekteAntwort>A</KorrekteAntwort>
+    </Fragenzeile>
+    <Fragenzeile>
+        <Fragennummer>2</Fragennummer>
+        <Frage>Was ist keine Rechtsform in Deutschland?</Frage>
+        <AntwortA>GmbH</AntwortA>
+        <AntwortB>AG</AntwortB>
+        <AntwortC>GbR</AntwortC>
+        <AntwortD>CDU</AntwortD>
+        <KorrekteAntwort>D</KorrekteAntwort>
+    </Fragenzeile>
+    <Fragenzeile>
+        <Fragennummer>3</Fragennummer>
+        <Frage>Was gibt es nicht in der Portfolio-Analyse nach BCG?</Frage>
+        <AntwortA>Cash-Cows</AntwortA>
+        <AntwortB>Dots</AntwortB>
+        <AntwortC>Poor Dogs</AntwortC>
+        <AntwortD>Stars</AntwortD>
+        <KorrekteAntwort>B</KorrekteAntwort>
+    </Fragenzeile>
+    <Fragenzeile>
+        <Fragennummer>4</Fragennummer>
+        <Frage>Zur SWOT-Analyse gehört?</Frage>
+        <AntwortA>Strongs</AntwortA>
+        <AntwortB>Treats</AntwortB>
+        <AntwortC>Strngths</AntwortC>
+        <AntwortD>Risk</AntwortD>
+        <KorrekteAntwort>C</KorrekteAntwort>
+    </Fragenzeile>
+    <Fragenzeile>
+        <Fragennummer>5</Fragennummer>
+        <Frage>Was stellt die dritte Stufe der Bedürfnispyramide dar?</Frage>
+        <AntwortA>Selbstverwirklichung</AntwortA>
+        <AntwortB>soziale Beziehungen / Kontakte</AntwortB>
+        <AntwortC>Sicherheit</AntwortC>
+        <AntwortD>Soziale Annerkennung</AntwortD>
+        <KorrekteAntwort>B</KorrekteAntwort>
+    </Fragenzeile>
+    <Fragenzeile>
+        <Fragennummer>6</Fragennummer>
+        <Frage>Mithilfe welcher Gleichung kann die Lagerumschlagshäufigkeit berechnet werden?</Frage>
+        <AntwortA>Jahresabsatz / Wareneinsatz</AntwortA>
+        <AntwortB>Wareneinsatz / Lagerabgänge</AntwortB>
+        <AntwortC>Lagerabgänge / durchschnittlicher Lagerbestand</AntwortC>
+        <AntwortD>Anfangsbestand + Istbestand / durchschnittlicher Lagerbestand</AntwortD>
+        <KorrekteAntwort>C</KorrekteAntwort>
+    </Fragenzeile>
+    <Fragenzeile>
+        <Fragennummer>7</Fragennummer>
+        <Frage>Wobei handelt es sich nicht um eine Liquiditätskennzahl?</Frage>
+        <AntwortA>Acid Test Ratio</AntwortA>
+        <AntwortB>Einzugsliquidität</AntwortB>
+        <AntwortC>Cash Flow Return on Investment</AntwortC>
+        <AntwortD>Cash Ratio</AntwortD>
+        <KorrekteAntwort>C</KorrekteAntwort>
+    </Fragenzeile>
+    <Fragenzeile>
+        <Fragennummer>8</Fragennummer>
+        <Frage>Was ist nicht Bestandteil des Umlaufvermögens?</Frage>
+        <AntwortA>Roh-, Hilfs- und Betriebsstoffe</AntwortA>
+        <AntwortB>Gewinnrücklagen</AntwortB>
+        <AntwortC>Forderungen aus Lieferungen und Leistungen</AntwortC>
+        <AntwortD>Liquide Mittel</AntwortD>
+        <KorrekteAntwort>B</KorrekteAntwort>
+    </Fragenzeile>
+</Quizfragen>

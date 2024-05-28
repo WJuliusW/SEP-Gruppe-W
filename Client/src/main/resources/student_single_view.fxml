@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="paneRootPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unidue.SEP.eteach.client.ViewController.Student_Single_Controller">
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="25.0">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="10.0">
+               <children>
+                  <ImageView fx:id="imgProfilbild" fitHeight="200.0" fitWidth="200.0" onDragDropped="#dragPBDropped" onDragOver="#dragPBOver" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Kermit.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnProfilbildAendern" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleProfilbildAendernAction" text="Profilbild aendern">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Green/image_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="txtImagePfad" visible="false" />
+               </children>
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+            </VBox>
+            <GridPane styleClass="grid" vgap="10.0" HBox.hgrow="NEVER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" percentWidth="0.0" />
+                <ColumnConstraints hgrow="NEVER" percentWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtVorname" minWidth="400.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtNachname" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" />
+                  <PasswordField fx:id="txtPasswort" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" />
+                  <ButtonBar GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="14">
+                     <buttons>
+                        <Button fx:id="btnZuruecksetzen" mnemonicParsing="false" text="Felder leeren">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/erase_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="btnZuruecksetzen1" mnemonicParsing="false" text="Abbruch">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/cancel_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnSpeichern" mnemonicParsing="false" onAction="#handleSpeicherButtonAction" text="Speichern">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Green/save_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </buttons>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </GridPane.margin>
+                  </ButtonBar>
+                  <Label fx:id="lblAdresse1" styleClass="HL1" text="Adresse" textFill="#28a828" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="35.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Roboto" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboStudienfach" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" />
+                  <TextField fx:id="txtOrt" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="13" />
+                  <TextField fx:id="txtStrasse" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="10" />
+                  <TextField fx:id="txtPostleitzahl" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="12" />
+                  <TextField fx:id="txtHausnummer" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="11" />
+                  <Label fx:id="lblNachname" text="Nachname" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblVorname" text="Vorname" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblMatrikelnummer1" text="Matrikelnummer" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblEmail" text="Email" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblPasswort1" text="Passwort" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblStudienfach" text="Studienfach" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblAdresse2" text="Strasse" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblAdresse3" text="Hausnummer" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblAdresse4" text="PLZ" textFill="#797979" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="12">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblAdresse5" text="Ort" textFill="#757575" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="13">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblMatrikelnummer" maxWidth="1.7976931348623157E308" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <PasswordField fx:id="txtPasswortWiederholung" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="lblPasswort2" text="Passwort Wiederholen" textFill="#797979" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblPasswort" styleClass="HL1" text="Passwort" textFill="#28a828" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Roboto" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="35.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblVorname111" styleClass="HL1" text="Stammdaten" textFill="#28a828" GridPane.halignment="RIGHT">
+                     <font>
+                        <Font name="Roboto" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button fx:id="btnPrivatChat" mnemonicParsing="false" onAction="#btnPrivChatPressed" text="PrivatChat" GridPane.halignment="CENTER" GridPane.rowIndex="14" />
+               </children>
+            </GridPane>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lblVorname1111" styleClass="HL1" text="Meine Veranstaltungen" textFill="#28a828">
+                     <font>
+                        <Font name="Roboto" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TableView fx:id="tblMeineVeranstaltungen" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="columnVeranstaltungstyp" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="-1.0" text="Typ" />
+                        <TableColumn fx:id="columnTitel" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="-1.0" text="Titel" />
+                        <TableColumn fx:id="columnSemester" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="-1.0" text="Semester" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
